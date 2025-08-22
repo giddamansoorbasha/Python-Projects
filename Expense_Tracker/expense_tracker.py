@@ -1,10 +1,10 @@
-from database import Expense_Tracker
+from database import ExpenseTracker
 from datetime import datetime
 
 class ExpenseTrackerCLI:
 
     def __init__(self):
-        self.expenses = Expense_Tracker()
+        self.expenses = ExpenseTracker()
 
     def record(self):
         try:

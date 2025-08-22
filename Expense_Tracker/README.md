@@ -12,13 +12,17 @@ You can add, view, and manage expenses easily from the command line.
 - Python 3  
 - MySQL  
 - mysql-connector-python (Python package)  
- 
 
-## How to Run
-1. Clone or download this project  
-2. Open terminal in project folder  
-3. Run the program  
-   ```bash
-   python expense_tracker.py
 
-⚠️ Note: Update your MySQL host, username, password, and database in the code before running.
+## Database Schema
+
+The project uses **MySQL** to store expense records.  
+Below is the schema for the `Expense_Tracker` table:
+
+```sql
+CREATE TABLE Expense_Tracker (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    transaction_date DATE,
+    amount DECIMAL(10,2),
+    reason TEXT
+);
