@@ -31,7 +31,3 @@ grocery-store-app/
 
 - Add, view, and list products.
 - Simple, clean web interface.
-
-## License
-
-MIT
