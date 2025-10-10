@@ -31,7 +31,7 @@ class ExpenseTrackerCLI:
             records = self.expenses.retrieve()
             print("\n--------Records--------\n")
             for record in records:
-                print(f"{record[0]}) ₹{record[2]:.2f} on {record[1]} for {record[3]}")
+                print(f"{type(record[0])}) ₹{type(record[2])} on {type(record[1])} for {type(record[3])}")
         except Exception as e:
             print(e)
     
